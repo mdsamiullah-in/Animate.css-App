@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  
+  .container{
+    height: 100vh;
+    display: flex;
+  }
+  
+  #section{
+    height: 100%;
+    background-color: #FCE5CD;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  #sidenav{
+    width: 260px;
+    height: 100%;
+    background-color: #F7D7B5;
+  }
+  
+  
+  #section h4{
+    font-size: 60px;
+    font-family: Verdana;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    color: #351C75;
+  }
+  
+  #section p{
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 23px;
+  color: #E69138;
+  font-family: sans-serif;
+  padding-top: 10px;
+  }
+  
+  #sidenav button{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #sidenav h2{
+    font-family: Arial;
+    padding: 0;
+    margin: 0;
+    padding-left: 25px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  
+  
+  #sidenav button{
+    display: flex;
+    margin-left: 25px;
+    border: none;
+    background-color: transparent;
+    font-size: 17px;
+    padding-top: 7px;
+    cursor: pointer;
+    color: #20201f;
+  }
+  
+  
+  .demo{
+    color: black;
+    font-size: 20px;
+  }
+  
+  h3{
+    margin-top: 20px;
+    margin-left: 25px;
+    background-color: white;
+    border: 1px solid black;
+    width: fit-content;
+    padding: 2px 6px;
+    color: black;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  
+  
+  #toggleBtn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgb(0, 0, 0);
+    padding: 8px;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    display: none;
+    width: 35px;
+    height: 35px;
+  }
+  
+  #icons{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+  }
+  
+  i{
+    padding: 5px 6px;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 8px;
+    height: 30px;
+    width: 30px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+  
+  }
+  
+  
+  @media(max-width: 786px){
+    #sidenav{
+      display: none;
+    }
+     #section #title{
+      font-size: 40px;
+     }
+     #bottom-title{
+        font-size: 10px;
+        text-align: center;
+     }
+     #icons{
+      display: block;
+     }
+  }
+  
+  @media(max-width : 360){
+    #section title{
+      font-size: 20px;
+    }
+    #bottom-title{
+      font-size: 5px;
+      text-align: center;
+    }
+  }
